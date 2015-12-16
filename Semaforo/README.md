@@ -1,7 +1,7 @@
-# Proyecto demo: semáforo simple
+# Proyecto demo: Semáforo simple
 Implementación de un semáforo simple utilizando los leds de la placa.
 
-##### Clases utilizadas
+### Clases utilizadas
   - pyb.LED: Utilizamos el led 1,2 y 3 (rojo, amarillo y verde).
   - pyb.Timer: Se utiliza un timer para generar la espera entre las transiciones de colores.
 
@@ -50,13 +50,13 @@ def setLamp(color):
         led3.on()
 ```		
 
-Ahora el ejecutar la función "setLamp" y pasarle alguno de los 3 colores definidos previamente, se encenderá en led correspondiente y se apagarán los otros.
+Ahora al ejecutar la función "setLamp" y pasarle alguno de los 3 colores definidos previamente, se encenderá en led correspondiente y se apagarán los otros.
 Ejemplo si queremos encender el amarillo:
 ```python
 setLamp(YELLOW)
 ```
 
-Por último, la lógica del semáforo será implementada mediante una máquina de estados, es decir, se ejecutará una funcion (que llamaremos callbackTimer) cada vez que se venza el timer,
+Por último, la lógica del semáforo será implementada mediante una máquina de estados, es decir, se ejecutará una función (que llamaremos callbackTimer) cada vez que se venza el timer,
 allí decidiremos, según en el estado que nos encontramos, cuál será el próximo estado.
 
 Para ello usamos la variable "status" definida previamente e inicializada en 0. Cada vez que se ejecute callbackTimer, se preguntará por el valor de la variable "status", se cambiará al color que sigue en la secuencia, 
@@ -86,7 +86,7 @@ def callbackTimer(timer):
 
 Es importante destacar que para poder leer/escribir una variable global dentro de un callback, deberemos definir la variable dentro del callback con el modificador "global"
 
-### Funcionamiento del timer en modo timeout
+##### Funcionamiento del timer en modo timeout
 
 Utilizaremos el timer mediante el método "timeout" el cual recibe un tiempo en milisegundos y una función, la cual se ejecutará solo una vez cuando se cumpla el tiempo designado.
 Por esta razón cuando se ejecuta callbackTimer volvemos a configurar un nuevo timeout.
