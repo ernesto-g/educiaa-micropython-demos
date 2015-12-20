@@ -5,7 +5,8 @@ Al presionar el pulsador TEC2 el juego se reanudará.
 
 ### Clases utilizadas
   - pyb.LED: Utilizamos el led 1,2 y 3 (rojo, amarillo y verde).
-
+  - pyb.Switch: Utilizamos el pulsador TEC1 y TEC2.
+  
 ### El código
 
 Comenzamos definiendo 3 variables que representarán los colores
