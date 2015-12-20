@@ -62,7 +62,7 @@ def checkStop(currentColor):
             setLamp(currentColor)
 ```
 
-Al entrar al "if" se ejecutará un buble "while" el cual evalúa el estado del pulsador TEC2 para salir, mientras tanto el bucle se ejecutará y se encenderá el led del color pasado por argumento,
+Al entrar al "if" se ejecutará un bucle "while" el cual evalúa el estado del pulsador TEC2 para salir, mientras tanto el bucle se ejecutará y se encenderá el led del color pasado por argumento,
 debido a la llamada de la función "setLamp". Al presionar TEC2, se saldrá del bucle y la función terminará.
 
 Por último, la lógica del juego se realiza en un bucle principal, donde se van encendiendo los leds, luego se ejecuta un pequeño delay y luego la función que pregunta si se presionó el pulsador que detiene la secuencia.
