@@ -12,6 +12,8 @@ Los proyectos están divididos en 3 niveles:
 
 ### Intermedio
   - Semaforo
-
+  - Juego adivinar color
+  
   
 ### Avanzado
+  - Juego Tateti
