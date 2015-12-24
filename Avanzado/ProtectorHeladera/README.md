@@ -8,7 +8,7 @@ Se utiliza una entrada analógica y una GPIO como salida para comandar un relé,
   
   
 ### El código
-Se definen constantes para los niveles de comparación contra la tensión de línea medida por al entrada analógica (LEVEL_HIGH en 230V y LEVEL_LOW en 210V). También se define un timeout
+Se definen constantes para los niveles de comparación contra la tensión de línea medida por la entrada analógica (LEVEL_HIGH en 230V y LEVEL_LOW en 210V). También se define un timeout
 que será el tiempo que debe durar la falla (consideraremos falla a tensión mayor a LEVEL_HIGH o menor a  LEVEL_LOW) para que se modifique la salida a relé.
 
 ```python
@@ -51,7 +51,7 @@ def setLamp(color):
         led3.on()
 ```
 
-Para el control del relé, creamos las funcinoes que activan y desactivan la GPIO
+Para el control del relé, creamos las funciones que activan y desactivan la GPIO
 
 ```python
 def setReleOn():
@@ -71,7 +71,7 @@ devuelto será alguna de las constantes RED (sobre tensión), YELLOW (baja tensi
 Luego de leer la conversión de la entrada analógica, deberemos convertir dicho valor (0 a 1023) a el valor de tensión de línea que representa. Para ello primero convertimos el resultado
 del ADC a un número de 0 a 3.3V simplemente multiplicando el valor devuelto (v1) por 3.3 y dividiéndolo por 1023. Suponemos que existirá un circuito en donde cuando la tensión de línea sea
 240V AC, entregará 3.3V a la entrada analógica, de modo que para obtener el valor de tensión de línea que representa la tensión medida, multiplicamos por una constante "k" = 240/3.3 = 72.72
-De esta manera almacenamos el la variable "voltage" el valor de tensión de línea "medido" por la entrada analógica.
+De esta manera almacenamos en la variable "voltage" el valor de tensión de línea "medido" por la entrada analógica.
 
 ```python
 def checkVoltageLevel():

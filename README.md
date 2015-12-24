@@ -17,3 +17,4 @@ Los proyectos están divididos en 3 niveles:
   
 ### Avanzado
   - Juego Tateti
+  - Protector de tensión para heladera  
