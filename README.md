@@ -19,3 +19,4 @@ Los proyectos están divididos en 3 niveles:
   - Juego Tateti
   - Protector de tensión para heladera  
   - Termostato con setpoint analágico    
+  - Control de 2 semaforos conectados mediante Modbus
