@@ -12,10 +12,10 @@ Preguntar al usuario un nombre y una edad, luego imprimir el nombre y si es mayo
 
 ### El código
 
-Comenzamos definiendo un bucle WHILE ya que el programa debera realizar el pedido del nombre y la edad una y otra vez.
-Dentro del bucle pedimos al usuario que ingrese un nombre, el cual se guardara como un tipo "string" en la variable "nombre", 
-luego pedimos al usuario que ingrese una edad, la cual almacenamos en la variable "edad",en la linea siguiente convertimos dicho valor en una 
-variable del tipo "int" mediante la funcion "int()".
+Comenzamos definiendo un bucle WHILE ya que el programa deberá realizar el pedido del nombre y la edad una y otra vez.
+Dentro del bucle pedimos al usuario que ingrese un nombre, el cual se guardará como un tipo "string" en la variable "nombre", 
+luego pedimos al usuario que ingrese una edad, la cual almacenamos en la variable "edad",en la línea siguiente convertimos dicho valor en una 
+variable del tipo "int" mediante la función "int()".
 
 ```python
 while True:
@@ -24,8 +24,8 @@ while True:
     edad = int(edad)
 ```
 
-A continuacion, realizamos el analisis de si la edad es mayor o igual a 18, para ello, utilizamos el operador ">=" (mayor igual) dentro de un
-bloque IF, e imprimimos la variable nombre junto conla leyenda de si es mayor de edad o no.
+A continuación, realizamos el análisis de si la edad es mayor o igual a 18, para ello, utilizamos el operador ">=" (mayor igual) dentro de un
+bloque IF, e imprimimos la variable "nombre" junto con la leyenda de si es mayor de edad o no.
 
 
 ```python

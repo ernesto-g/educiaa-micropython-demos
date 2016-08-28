@@ -43,7 +43,7 @@ el semaforo slave estara en GREEN
 
 #### Slave
 En la placa Slave, se define un diccionario (mappedRegs) con un solo item, representando el registro del dispositivo slave.
-Luego se crea elobjeto Slave pasandole como argumento dicho diccionario. Al recibir la trama ModBus para escribir el registro, cambiara el valor
+Luego se crea el objeto Slave pasandole como argumento dicho diccionario. Al recibir la trama ModBus para escribir el registro, cambiara el valor
 del item del diccionario.
 
 ```python

@@ -1,6 +1,6 @@
 # Proyecto demo: Indicador Par o Impar
-Preguntar al usuario un numero, luego imprimir un mensaje indicando si el numero es par o impar. 
-Al finalizar volver a preguntar un numero.
+Preguntar al usuario un número, luego imprimir un mensaje indicando si el número es par o impar. 
+Al finalizar volver a preguntar un número.
 
 
 ### Funciones utilizadas
@@ -15,9 +15,9 @@ Al finalizar volver a preguntar un numero.
 
 ### El código
 
-Comenzamos definiendo un bucle WHILE ya que el programa debera realizar el pedido de un numero y su posterior analisis una y otra vez.
-Dentro del bucle pedimos al usuario que ingrese un numero, el cual se guardara como un tipo "string" en la variable "nStr", en la linea siguiente
-convertimos dicho valor en una variable del tipo "int" mediante la funcion "int()".
+Comenzamos definiendo un bucle WHILE ya que el programa debera realizar el pedido de un número y su posterior análisis una y otra vez.
+Dentro del bucle pedimos al usuario que ingrese un número, el cual se guardará como un tipo "string" en la variable "nStr", en la línea siguiente
+convertimos dicho valor en una variable del tipo "int" mediante la función "int()".
 
 ```python
 while True:
@@ -25,9 +25,9 @@ while True:
 	nInt = int(nStr)
 ```
 
-A continuacion, realizamos el analisis de si el numero almacenado en la variable "nInt" es par o impar, para ello, realizamos la operacion
-logica AND entre dicho valor y el valor 0x0001. En el caso de que el numero sea par, el resulado de la operacion es 0x0001, de lo contrario el
-resultado es 0x0000. Por lo que evaluamos el resultado comparandolo con 0x0001 en un bloque IF, para decidir que mensaje imprimir.
+A continuación, realizamos el análisis de si el número almacenado en la variable "nInt" es par o impar, para ello, realizamos la operación
+lógica AND entre dicho valor y el valor 0x0001. En el caso de que el número sea par, el resulado de la operación es 0x0001, de lo contrario el
+resultado es 0x0000. Por lo que evaluamos el resultado comparándolo con 0x0001 en un bloque IF, para decidir qué mensaje imprimir.
 
 
 ```python
