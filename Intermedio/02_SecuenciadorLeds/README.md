@@ -1,4 +1,4 @@
-# Proyecto demo: Secuenciados de LEDs
+# Proyecto demo: Secuenciador de LEDs programable
 Hacer un programa que le pida al usuario que ingrese la secuencia de leds que se encenderán de a uno, cada 1 segundo. (EL ingreso será 1,2 o 3) 
 al ingresar la palabra "fin" el programa comenzará a ejecutar la secuencia programada y luego terminará.
 
