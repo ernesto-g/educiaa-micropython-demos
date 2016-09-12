@@ -10,8 +10,8 @@ TIME_RED=10000
 TIME_YELLOW=1000
 TIME_GREEN=5000
 
-uart = pyb.UART(3)
-uart.init(115200)
+uart = pyb.UART(0) #0:rs485. 1:uart
+uart.init(115200,packet_mode=True)
 slaveSemaphore = ModBus.Instrument(uart,0x55,mode=ModBus.MODE_ASCII)
 
 

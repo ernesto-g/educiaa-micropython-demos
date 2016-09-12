@@ -13,8 +13,8 @@ GREEN=2
 
 mappedRegs = {0x4000:RED}
 
-uart = pyb.UART(3)
-uart.init(115200)
+uart = pyb.UART(0) #0:rs485. 1:uart
+uart.init(115200,packet_mode=True)
 slaveSemaphore = ModBus.Slave(uart,0x55,mappedRegs,mode=ModBus.MODE_ASCII)
 
 led1 = pyb.LED(2)

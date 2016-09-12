@@ -16,10 +16,12 @@ En este programa se crea el objeto slaveSemaphore mediante el cual se envia una 
 0x4000. Los valores que se escriben en el registro son las constantes RED, YELLOW y GREEN (0, 1 o 2)
 
 ```python
-uart = pyb.UART(3)
-uart.init(115200)
+uart = pyb.UART(0)
+uart.init(115200,packet_mode=True)
 slaveSemaphore = ModBus.Instrument(uart,0x55,mode=ModBus.MODE_ASCII)
 ```
+Inicializamos la UART en modo "packet" para recibir las tramas en un buffer en lugar de leer byte a byte, utilizando la UART0 que es la
+interface RS-485.
 
 En el bucle principal del programa se observa como se ejecuta el metodo write_register escribiendo en el registro del slave el valor
 statusSlave previamente calculado segun el valor de la variable status.
@@ -49,8 +51,8 @@ del item del diccionario.
 ```python
 mappedRegs = {0x4000:RED}
 
-uart = pyb.UART(3)
-uart.init(115200)
+uart = pyb.UART(0)
+uart.init(115200,packet_mode=True)
 slaveSemaphore = ModBus.Slave(uart,0x55,mappedRegs,mode=ModBus.MODE_ASCII)
 ```
 
